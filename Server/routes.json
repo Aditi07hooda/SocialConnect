@@ -1,0 +1,4 @@
+{
+    "/social-connect/*": "http://localhost:8000",
+    "/ecommerce/*": "http://localhost:8001"
+  }
