@@ -16,13 +16,15 @@ const RightSide = () => {
     return (
         <div className='RightSide'>
             <div className="navIcons">
-
-                <FaCartPlus fontSize={30}/>
+                <Link to='../ecommerce'>
+                    <FaCartPlus fontSize={30}/>
+                </Link>
                 <Link to='../home'>
                     <MdEmojiEvents fontSize={35}/>
                 </Link>
-
-                <FcBusinesswoman fontSize={35} />
+                <Link to='../women'>
+                    <FcBusinesswoman fontSize={35} />
+                </Link>
                 <img src={Comment} alt="" />
             </div>
 

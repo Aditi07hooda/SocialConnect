@@ -12,23 +12,23 @@ export const api = createApi({
       providesTags: ["User"],
     }),
     getProducts: build.query({
-      query: () => "EcommerceClient/products",
+      query: () => "client/products",
       providesTags: ["Products"],
     }),
     getCustomers: build.query({
-      query: () => "EcommerceClient/customers",
+      query: () => "client/customers",
       providesTags: ["Customers"],
     }),
     getTransactions: build.query({
       query: ({ page, pageSize, sort, search}) => ({
-        url: "EcommerceClient/transactions",
+        url: "client/transactions",
         method: "GET",
         params: { page, pageSize, sort, search },
       }),
       providesTags: ["Transactions"],
     }),
     getGeography: build.query({
-      query: () => "EcommerceClient/geography",
+      query: () => "client/geography",
       providesTags: ["Geography"],
     }),
     getSales: build.query({

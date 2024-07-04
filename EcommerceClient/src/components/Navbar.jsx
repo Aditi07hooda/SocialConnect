@@ -4,13 +4,13 @@ import {
   DarkModeOutlined,
   Menu as MenuIcon,
   Search,
-  SettingsOutlined,
   ArrowDropDownOutlined,
 } from "@mui/icons-material";
 import FlexBetween from "components/FlexBetween";
 import { useDispatch } from "react-redux";
 import { setMode } from "state";
 import profileImage from "assets/profile.jpg";
+import { IoMdAddCircle } from "react-icons/io";
 import {
   AppBar,
   Button,
@@ -70,7 +70,7 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
             )}
           </IconButton>
           <IconButton>
-            <SettingsOutlined sx={{ fontSize: "25px" }} />
+            <IoMdAddCircle fontSize={25} />
           </IconButton>
 
           <FlexBetween>

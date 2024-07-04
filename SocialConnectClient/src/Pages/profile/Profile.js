@@ -10,15 +10,11 @@ const Profile = () => {
   return (
     <div className='Profile'>
       <ProfilePageLeft />
-
       <div className="ProfilePage-Center">
         <ProfileCard location="profilePage" />
         <PostSide />
       </div>
-
-
       <RightSide />
-
     </div>
   )
 }

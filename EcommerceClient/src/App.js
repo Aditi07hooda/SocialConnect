@@ -1,9 +1,8 @@
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material/styles"
 import { useMemo } from "react";
-import { create } from "@mui/material/styles/createTransitions";
 import { useSelector } from "react-redux";
-import { HashRouter, BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes} from "react-router-dom";
 import { themeSettings } from "theme";
 import Dashboard from "scenes/dashboard";
 import Layout from "scenes/layout";
