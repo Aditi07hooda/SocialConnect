@@ -3,11 +3,14 @@ import "./LogoSearch.css";
 import Logo from "../../Img/logo.png";
 import SearchIcon from "@mui/icons-material/Search";
 import { TiSocialSkypeOutline } from "react-icons/ti";
+import { Link } from "react-router-dom";
 
 const LogoSearch = () => {
   return (
     <div className="LogoSearch">
-      <TiSocialSkypeOutline fontSize={50} />
+      <Link to="../home">
+        <TiSocialSkypeOutline fontSize={50} />
+      </Link>
 
       <div className="Search">
         <input type="text" placeholder="#Search" />

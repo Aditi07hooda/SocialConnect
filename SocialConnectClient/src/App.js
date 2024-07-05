@@ -5,6 +5,8 @@ import Home from './Pages/home/Home';
 import Profile from './Pages/profile/Profile';
 import ProductCard from './Pages/Products/ProductCard.jsx';
 import WomenEmpowerment from './Pages/Empowerment/WomenEmpowerment.jsx';
+import Events from './Pages/Event/Events.jsx';
+import Chat from './Pages/chatbot/Chat.jsx';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
         <Route path='/profile/:id' element={user ? <Profile /> : <Navigate to='../auth' />} />
         <Route path='/ecommerce' element={user ? <ProductCard /> : <Navigate to='../auth' />} />
         <Route path='/women' element={user ? <WomenEmpowerment /> : <Navigate to='../auth' />} />
+        <Route path='/event' element={user ? <Events /> : <Navigate to='../auth' />} />
+        <Route path='/bot' element={user ? <Chat /> : <Navigate to='../auth' />} />
       </Routes>
     </div>
   );

@@ -2,16 +2,12 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { followUser, unFollowUser } from '../../actions/UserAction';
 
-
-
 const UserFollow = ({ person }) => {
-
     const dispatch = useDispatch();
     const { user } = useSelector((state) => state.authReducer.authData);
     const [following, setFollowing] = useState(person.followers.includes(user._id));
 
     const serverPublic = process.env.REACT_APP_PUBLIC_FOLDER;
-
 
     const handleFollow = () => {
         following ? dispatch(unFollowUser(person._id, user))

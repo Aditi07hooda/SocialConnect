@@ -8,7 +8,6 @@ import UserRoute from './Routes/UserRoute.js';
 import PostRoute from './Routes/PostRoute.js';
 import UploadRoute from './Routes/UploadRoute.js';
 
-
 // Routes
 const app = express();
 
